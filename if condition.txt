@@ -1,0 +1,418 @@
+1.sum of two numbers
+import java.util.Scanner;
+
+public class example1 {
+ 
+  public static void main(String[] args) {
+    
+    Scanner I = new Scanner (System.in);
+   
+    System.out.print("enter the first numer: ");
+    
+    int num1 = I.nextInt();
+    
+    System.out.print("enter the second number: ");
+    
+    int num2 = I.nextInt();
+    int sum = num1 + num2;
+   
+    System.out.println();
+    
+    System.out.println("Sum: "+sum);
+  }
+}
+
+2.// WAP to accept number and check it is positive or negative
+import java.util.Scanner;
+class Example2 {
+
+  public static void main(String args[]) {
+
+    Scanner s=new Scanner(System.in);
+
+    System.out.println("Enter number to check it is positive or negative");
+    int num=s.nextInt();
+
+    if(num>0){
+      System.out.println("positive number");
+    }
+    else{
+      System.out.println("negative  number");
+    }
+
+
+    
+  }
+}
+
+3.// WAP to accept  marks and check is pass or fail (pass marks is 50)
+import java.util.Scanner;
+class example3 {
+
+  public static void main(String args[]) {
+
+    Scanner s=new Scanner(System.in);
+
+    System.out.println("Enter marks to check it is pass or fail");
+    int num=s.nextInt();
+
+    if(num>=50){
+      System.out.println("pass marks");
+    }
+    else{
+      System.out.println("fail marks");
+    }
+
+
+    
+  }
+}
+
+4.// WAP to accept number and check it is even or odd
+import java.util.Scanner;
+class example4 {
+
+  public static void main(String args[]) {
+
+    Scanner s=new Scanner(System.in);
+
+    System.out.println("Enter number to check it is Even or odd");
+    int num=s.nextInt();
+
+    if(num%2==0){
+      System.out.println("even number");
+    }
+    else{
+      System.out.println("odd number");
+    }
+    
+  }
+}
+
+5.//WAP to accept basic salary and find gross salary.
+import java.util.Scanner;
+
+public class example5 {
+ 
+  public static void main(String[] args) {
+    
+    Scanner s = new Scanner (System.in);
+   
+    System.out.print("enter your basic salary: ");
+    
+    int basic = s.nextInt();
+    int hra =(89*basic)/100;
+    int da =(75*basic)/100;
+    int gs =basic + hra + da;
+    
+    System.out.print("your gross salary is: "+gs);
+    
+    
+  }
+}  
+
+6.//WAP to accept age and print he/she is eligible for voting or not.
+import java.util.Scanner;
+
+public class example6 {
+ 
+  public static void main(String[] args) {
+    
+    Scanner s = new Scanner (System.in);
+   
+    System.out.print("enter your age: ");
+    
+    int age = s.nextInt();
+    if(age>=18){
+      System.out.print("eligible to vote: ");
+    }
+    else{
+      System.out.print(" not eligible to vote: ");
+    }
+    
+    
+    
+  }
+}  
+
+7.//WAP to find maximum between three numbers
+import java.util.Scanner; 
+public class example7 { 
+  public static void main(String[] args) { 
+ 
+  Scanner s = new Scanner(System.in); 
+    System.out.println("Enter num1"); 
+  int num1 = s.nextInt(); 
+  System.out.println("Enter num2"); 
+  int num2 = s.nextInt(); 
+  System.out.println("Enter num3"); 
+  int num3 = s.nextInt(); 
+  if (num1 > num2 && num1 > num3) 
+  { 
+    System.out.println("num1 is greater"); 
+  } 
+  else 
+  { 
+    if (num2 > num3 && num2 > num1) 
+    { 
+      System.out.println("num2 is greater"); 
+    }
+    else 
+    { 
+      System.out.println("num3 is greater"); 
+    } 
+  } 
+} 
+
+8.//WAP to check whether a number is divisible by 5 and 11 or not.
+import java.util.Scanner; 
+public class example8 { 
+  public static void main(String[] args) { 
+    Scanner s = new Scanner(System.in); 
+    System.out.println("Enter a number"); 
+    int number = s.nextInt(); 
+    if (number % 5 == 0) 
+    { 
+      System.out.println("divisible by 5"); 
+    } 
+    else if(number % 11 == 0) 
+    { 
+      System.out.println("divisible by 11"); 
+    }
+  }
+}
+
+9.//WAP to check whether a year is leap year or not.
+import java.util.Scanner; 
+public class example9 { 
+  public static void main(String[] args) { 
+    Scanner s=new Scanner(System.in); 
+    System.out.println("Enter an year"); 
+    int year=s.nextInt(); 
+    if((year%4==0&&year%100==0)||(year%400==0))
+    { 
+      System.out.println("leap year"); 
+    } 
+    else
+    { 
+      System.out.println("not leap year"); 
+    } 
+  } 
+}
+
+10.//WAP to Sum and avg of three subjects marks
+import java.util.Scanner; 
+public class example10 { 
+  public static void main(String[] args) { 
+    Scanner s=new Scanner(System.in); 
+    System.out.println("Enter marks of subject1: "); 
+    int subject1 = s.nextInt(); 
+    System.out.println("Enter marks of subject2: "); 
+    int subject2 = s.nextInt(); 
+    System.out.println("Enter marks of subject3: "); 
+    int subject3 = s.nextInt(); 
+    int sum = subject1+subject2+subject3; 
+    int avg = sum/3; 
+    System.out.println("Sum of your marks: "+sum); 
+    System.out.println("Avg of your marks: "+avg); 
+  } 
+}
+
+11.//WAP to Shopping
+import java.util.Scanner; 
+public class example11 { 
+  public static void main(String[] args) { 
+    Scanner s =new Scanner(System.in); 
+    System.out.println("Enter 3 shop_list: "); 
+    int shop_list1 =s.nextInt(); 
+    int shop_list2 =s.nextInt(); 
+    int shop_list3 =s.nextInt(); 
+    System.out.println("Enter salary: "); 
+    int salary =s.nextInt(); 
+    int sum=shop_list1+shop_list2+shop_list3;
+
+    System.out.println("your total shopping spent: "+sum); 
+    int spent =(sum*100)/salary; 
+    System.out.println("your salary spent on shopping is: "+spent+"%"); 
+  } 
+}
+
+12.// electricity bill in units
+
+import java.util.Scanner; 
+public class example12 { 
+  public static void main(String[] args) { 
+    
+    Scanner s=new Scanner(System.in); 
+    System.out.println("Enter electricity bill in units"); 
+    int units=s.nextInt(); 
+    double bill=0; 
+    if(units<=50){ 
+      bill=units*0.50; 
+    } 
+    else if(units<=150) { 
+      bill=25+(units-50)*0.75; 
+    
+    } 
+    else if(units<=250){ 
+      bill=25+75+(units-150)*1.20; 
+    } 
+    else
+    {
+      bill=25+75+120+(units-250)*1.50; 
+    } 
+    System.out.println("your electricity bill is: "+(bill+(bill*20)/100)); 
+  } 
+}
+
+13.//WAP basic salary,hra.da,gs
+import java.util.Scanner; 
+public class example13 { 
+  public static void main(String[] args) { 
+    Scanner s=new Scanner(System.in); 
+    System.out.println("Enter your basic salary: "); 
+    int basic=s.nextInt(); 
+    if(basic<=10000){ 
+      int hra=(89*basic)/100; 
+      int da=(67*basic)/100; 
+      int gs=basic+hra+da; 
+    System.out.println("your gross salary is: "+gs); 
+    } 
+    if(basic<=20000){ 
+      int hra =(92*basic)/100; 
+      int da=(70*basic)/100; 
+      int gs=hra+basic+da; 
+      System.out.println("your gross salary is: "+gs); 
+    } 
+    if(basic>20001){ 
+      int hra=(95*basic)/100; 
+      int da=(75*basic)/100; 
+      int gs=hra+da+basic; 
+      System.out.println("your gross salary is: "+gs); 
+    } 
+  } 
+}
+
+14.//WAP project,external,internal
+import java.util.Scanner; 
+public class example14 { 
+  public static void main(String[] args) { 
+    Scanner s=new Scanner(System.in); 
+    System.out.println("Enter project marks: "); 
+    int project=s.nextInt(); 
+    System.out.println("Enter internal marks: "); 
+    int internal =s.nextInt(); 
+    System.out.println("Enter external marks: "); 
+    int external=s.nextInt(); 
+    if(project>=50&&internal>=50&&external>=50){ 
+      int total=(70*project)/100 + (20*external)/100 + (10*internal)/100; 
+      if(total>=90) { 
+        System.out.println("A grade"); 
+      } 
+      else if(total>=70) 
+      { 
+        System.out.println("B grade"); 
+      } 
+      else 
+      { 
+        System.out.println("C grade"); 
+      } 
+    } 
+    if(project<50){ 
+      System.out.println("failed in project"+ project); 
+    } 
+    if(external<50){ 
+      System.out.println("failed in external"+external); 
+    } 
+    if(internal<50){ 
+      System.out.println("failed in internals"+internal); 
+    } 
+  } 
+}
+
+15.//WAP ATM
+import java.util.Scanner; 
+public class example15 { 
+  public static void main(String[] args) { 
+    Scanner s = new Scanner(System.in); 
+    System.out.println("enter the amount to withdraw"); 
+    int amount = s.nextInt(); 
+    int n = 100; 
+    if (amount % n != 0) { 
+      System.out.println("enter amount in multiples of 500,200,100"); 
+    } 
+    else 
+    { 
+      int five = amount / 500; 
+      int two = amount - (five * 500); System.out.print("number of 500 notes: "); System.out.println(five); int one = two / 200; 
+      if (one != 0) 
+      { 
+        System.out.print("number of 200 notes: "); 
+        System.out.println(one); 
+        int zero = (two - (one * 200)); 
+        int six = zero / 100; 
+        System.out.print("number of 100 notes: "); 
+        System.out.println(six); 
+      } 
+      else 
+      { 
+        System.out.print("number of 100 notes: ");
+        System.out.println(two/100); 
+      } 
+    } 
+  } 
+}
+
+16.//WAP week
+import java.util.Scanner; 
+public class example16 { 
+  public static void main(String[] args) { 
+    Scanner s=new Scanner(System.in); 
+    System.out.println("Enter number of the week"); 
+    int number=s.nextInt(); 
+    String[] 
+    week={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"}; 
+    System.out.println(week[number]); 
+  } 
+}
+
+17.// week and number
+import java.util.Scanner;
+class Example1 {
+
+  public static void main(String args[]) {
+
+    Scanner s=new Scanner(System.in);
+
+     System.out.println("Enter week number to print weekday");
+    int week_num=s.nextInt();
+
+    if(week_num==1){
+      System.out.println("Monday");
+    }
+    else if(week_num==2){
+      System.out.println("Tuesday");
+    }
+    else if(week_num==3){
+      System.out.println("wednesday");
+    }
+    else if(week_num==4){
+      System.out.println("Thursday");
+    }
+    else if(week_num==5){
+      System.out.println("Friday");
+    }
+    else if(week_num==6){
+      System.out.println("Saturday");
+    }
+    else if(week_num==7){
+      System.out.println("Sunday");
+    }
+    else {
+      System.out.println("invalid week number");
+    }
+    
+    
+  }
+}
+

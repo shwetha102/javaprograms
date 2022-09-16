@@ -1,0 +1,77 @@
+1.//WAP to prfect and not perfect
+import java.util.Scanner;
+public class example18 {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter a number to check if it is perfect or not: ");
+        int number=s.nextInt();
+        int sum=0;
+        for(int i=1;i<=number/2;i++){
+            if(number%i==0){
+                sum+=i;
+            }
+        }
+        if(sum==number){
+            System.out.println("PERFECT NUMBER: "+ sum);
+        }
+        else{
+            System.out.println("NOT PERFECT NUMBER: "+sum);
+        }
+    }
+}
+
+
+2.//WAP print the sum of its factorials
+import java.util.Scanner;
+public class example20 {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter a number to print the sum of its factorials: ");
+        int number=s.nextInt();
+        int sum=0;
+        for(int i=1;i<=number/2;i++){
+            if(number%i==0){
+                sum+=i;
+            }
+        }
+        System.out.println("sum of factorials is: "+sum);
+    }
+}
+
+3.//WAP to find the number of factorials
+import java.util.Scanner;
+public class example21 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a number to find the number of factorials: ");
+        int number = s.nextInt();
+        int count=0;
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                count+=1;
+            }
+        }
+
+        System.out.println("number of factorials: "+count);
+    }
+
+4.////WAP prime or not
+import java.util.Scanner;
+public class example22 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a number to check if it is prime or not: ");
+        int number = s.nextInt();
+        int count = 0;
+        for (int i = 1; i <= number / 2; i++) {
+            if (number % i == 0) {
+                count += 1;
+            }
+        }
+        if (count == 1) {
+            System.out.println("PRIME NUMBER: " + count);
+        } else {
+            System.out.println("NOT PRIME NUMBER: " + count);
+        }
+    }
+}
